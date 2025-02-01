@@ -141,9 +141,7 @@ class TwoCombatantsPage:
         self.local = local
 
     def print_header(self):
-        css_path = "/css"
-        if (self.local):
-            css_path = "../../css"
+        css_path = "../../css"
         print(f"<html><head><link rel='stylesheet' href='{css_path}/page.css'></head><body>")
         print("<a href='https://github.com/g1a/andromedas-edge-odds' class='github-fork-ribbon'data-ribbon='Fork me on GitHub' title='Fork me on GitHub'>Fork me on GitHub</a>")
         print("<div class='contents'>")
@@ -161,12 +159,10 @@ class TwoCombatantsPage:
 
     def print_menu_contents(self, selected_menu, link_template):
         for menu in range(1, 6):
-            link_prefix = ""
             link_postfix = ""
             if (self.local):
-                link_prefix = "../"
                 link_postfix = "/index.html"
-            link = link_prefix + link_template.replace("VAR", str(menu)) + link_postfix
+            link = link_template.replace("VAR", str(menu)) + link_postfix
             if menu == selected_menu:
                 print("<li class=selected>" + str(menu) + "</li>")
             else:
@@ -245,7 +241,7 @@ if (len(sys.argv) < 3):
 
 attacker_targeting = int(sys.argv[1])
 defender_targeting = int(sys.argv[2])
-local = True
+local = False
 
 accumulator = PlaintextOutput()
 if ((len(sys.argv) >= 4) and (sys.argv[3] == '--html')):
