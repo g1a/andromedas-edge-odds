@@ -245,7 +245,7 @@ if (len(sys.argv) < 3):
 
 attacker_targeting = int(sys.argv[1])
 defender_targeting = int(sys.argv[2])
-local = False
+local = True
 
 accumulator = PlaintextOutput()
 if ((len(sys.argv) >= 4) and (sys.argv[3] == '--html')):
