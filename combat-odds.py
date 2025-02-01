@@ -162,7 +162,7 @@ class TwoCombatantsPage:
             link_postfix = ""
             if (self.local):
                 link_postfix = "/index.html"
-            link = link_template.replace("VAR", str(menu)) + link_postfix
+            link = '../' + link_template.replace("VAR", str(menu)) + link_postfix
             if menu == selected_menu:
                 print("<li class=selected>" + str(menu) + "</li>")
             else:
