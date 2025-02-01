@@ -57,7 +57,11 @@
 .vertical-menu ul li.selected {
     background-color: #6b9bd5; /* Slightly darker blue than 'defender-row-header' */
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 2.2em;
+    color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
 }
 
 .vertical-menu ul li a {
@@ -109,9 +113,14 @@
 }
 
 .horizontal-menu ul li.selected {
+    margin-top: -5px;
     background-color: #ff9999; /* Darker red for selected item */
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 2.2em;
+    color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
 }
 
 .horizontal-menu ul li.unselected:hover {
