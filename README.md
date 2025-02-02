@@ -20,6 +20,16 @@ Note that in Andromeda's Edge, combats can involve more than two players, and in
 
 This project started out as an experiment to determine if Chatgpt could be coerced into calculating the odds of winning a combat in Andromeda's Edge with targeting. Initial attempts were done via brute force, and resulted in the AI telling me I had used too much compute time, and locking me out of further experiments for 24 hours. After that, I was able to get it to write the binomial_probability function that is at the core of this program today. My theory was that, in using probability theory instead of brute force, Chatgpt would have enough available processing power to complete the assignment. While it was able to calculate the combinatorics involved with two players rolling six dice (resulting in the probability_table function), the recursion required to calculate outcomes was beyond it, and I was forced to finish the algorithm and add the targeting calculations myself.
 
+## How
+
+1. A [simple Python script](https://github.com/g1a/andromedas-edge-odds) will print out a probability table in plain text, using the targeting values stipluated on the command line.
+2. The same program has an `--html` flag that will print the same table wrapped in HTML table elements.
+3. An [external stylesheet](https://github.com/g1a/andromedas-edge-odds/blob/main/css/page.css) is applied to add color and graphic elements to the HTML table.
+4. A [build script](https://github.com/g1a/andromedas-edge-odds/blob/main/build.sh) calls the program repeatedly to produce all combinations of the different possible targeting values for two players.
+5. The resulting pages are committed directly to the `main` branch and served via Github Pages.
+
+This could, clearly, be more sophisticated than it is, but it suffices for the task at hand.
+
 ## License
 
 No rights are reserved over any of the code presented in this project; see the [License](LICENSE) for more information. The copyright to Andromeda's Edge is held by its publisher, [Cardboard Alchemy](https://cardboardalchemy.com/).
