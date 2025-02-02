@@ -55,7 +55,7 @@
 }
 
 .vertical-menu ul li.selected {
-    background-color: #6b9bd5; /* Slightly darker blue than 'defender-row-header' */
+    background-color: #6b9bd5; /* Slightly darker blue than 'opponent-row-header' */
     font-weight: bold;
     font-size: 2.2em;
     color: white;
@@ -184,12 +184,12 @@ td, th {
     color: black;
 }
 
-.attacker-col-header {
+.active-player-col-header {
     background-color: #ffb3b3; /* Slightly darker red */
     color: black;
 }
 
-.defender-row-header {
+.opponent-row-header {
     background-color: #99c2ff; /* Slightly darker blue */
     color: black;
 }

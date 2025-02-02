@@ -1,16 +1,16 @@
 <html><head><link rel='stylesheet' href='../../css/page.css'></head><body>
 <a href='https://github.com/g1a/andromedas-edge-odds' class='github-fork-ribbon'data-ribbon='Fork me on GitHub' title='Fork me on GitHub'>Fork me on GitHub</a>
 <div class='contents'>
-<div class='horizontal-menu'><h3>Attacker</h3>
-<ul id='attacker-menu'>
+<div class='horizontal-menu'><h3>Active Player</h3>
+<ul id='active_player-menu'>
 <li class=unselected><a href='../1-targeting-v-4-targeting'>1</a></li>
 <li class=unselected><a href='../2-targeting-v-4-targeting'>2</a></li>
 <li class=unselected><a href='../3-targeting-v-4-targeting'>3</a></li>
 <li class=unselected><a href='../4-targeting-v-4-targeting'>4</a></li>
 <li class=selected>5</li>
 </ul></div>
-<div class='vertical-menu'><h3>Defender</h3>
-<ul id='defender-menu'>
+<div class='vertical-menu'><h3>Opponent</h3>
+<ul id='opponent-menu'>
 <li class=unselected><a href='../5-targeting-v-1-targeting'>1</a></li>
 <li class=unselected><a href='../5-targeting-v-2-targeting'>2</a></li>
 <li class=unselected><a href='../5-targeting-v-3-targeting'>3</a></li>
@@ -18,12 +18,12 @@
 <li class=unselected><a href='../5-targeting-v-5-targeting'>5</a></li>
 </ul></div>
 <table>
-<tr><th></th>	<th class=attacker-col-header id='a-1'>1</th>	<th class=attacker-col-header id='a-2'>2</th>	<th class=attacker-col-header id='a-3'>3</th>	<th class=attacker-col-header id='a-4'>4</th>	<th class=attacker-col-header id='a-5'>5</th>	<th class=attacker-col-header id='a-6'>6</th>	</tr>
-<tr><th class=defender-row-header id='d-1'>1</th>	<td class='even'>50.00%</td>	<td class='likely'>91.67%</td>	<td class='likely'>95.83%</td>	<td class='likely'>97.92%</td>	<td class='likely'>98.96%</td>	<td class='likely'>99.48%</td>	</tr>
-<tr><th class=defender-row-header id='d-2'>2</th>	<td class='low'>27.78%</td>	<td class='high'>63.89%</td>	<td class='likely'>88.89%</td>	<td class='likely'>93.75%</td>	<td class='likely'>96.53%</td>	<td class='likely'>98.09%</td>	</tr>
-<tr><th class=defender-row-header id='d-3'>3</th>	<td class='unlikely'>16.67%</td>	<td class='low'>42.59%</td>	<td class='high'>70.83%</td>	<td class='likely'>87.73%</td>	<td class='likely'>92.59%</td>	<td class='likely'>95.60%</td>	</tr>
-<tr><th class=defender-row-header id='d-4'>4</th>	<td class='unlikely'>10.49%</td>	<td class='low'>28.70%</td>	<td class='even'>52.62%</td>	<td class='high'>74.92%</td>	<td class='likely'>87.27%</td>	<td class='likely'>91.94%</td>	</tr>
-<tr><th class=defender-row-header id='d-5'>5</th>	<td class='unlikely'>6.79%</td>	<td class='unlikely'>19.75%</td>	<td class='low'>38.32%</td>	<td class='high'>59.83%</td>	<td class='high'>77.58%</td>	<td class='likely'>87.16%</td>	</tr>
-<tr><th class=defender-row-header id='d-6'>6</th>	<td class='unlikely'>4.46%</td>	<td class='unlikely'>13.82%</td>	<td class='low'>27.97%</td>	<td class='even'>46.19%</td>	<td class='high'>65.15%</td>	<td class='high'>79.46%</td>	</tr>
+<tr><th></th>	<th class=active-player-col-header id='a-1'>1</th>	<th class=active-player-col-header id='a-2'>2</th>	<th class=active-player-col-header id='a-3'>3</th>	<th class=active-player-col-header id='a-4'>4</th>	<th class=active-player-col-header id='a-5'>5</th>	<th class=active-player-col-header id='a-6'>6</th>	</tr>
+<tr><th class=opponent-row-header id='d-1'>1</th>	<td class='even'>50.00%</td>	<td class='likely'>91.67%</td>	<td class='likely'>95.83%</td>	<td class='likely'>97.92%</td>	<td class='likely'>98.96%</td>	<td class='likely'>99.48%</td>	</tr>
+<tr><th class=opponent-row-header id='d-2'>2</th>	<td class='low'>27.78%</td>	<td class='high'>63.89%</td>	<td class='likely'>88.89%</td>	<td class='likely'>93.75%</td>	<td class='likely'>96.53%</td>	<td class='likely'>98.09%</td>	</tr>
+<tr><th class=opponent-row-header id='d-3'>3</th>	<td class='unlikely'>16.67%</td>	<td class='low'>42.59%</td>	<td class='high'>70.83%</td>	<td class='likely'>87.73%</td>	<td class='likely'>92.59%</td>	<td class='likely'>95.60%</td>	</tr>
+<tr><th class=opponent-row-header id='d-4'>4</th>	<td class='unlikely'>10.49%</td>	<td class='low'>28.70%</td>	<td class='even'>52.62%</td>	<td class='high'>74.92%</td>	<td class='likely'>87.27%</td>	<td class='likely'>91.94%</td>	</tr>
+<tr><th class=opponent-row-header id='d-5'>5</th>	<td class='unlikely'>6.79%</td>	<td class='unlikely'>19.75%</td>	<td class='low'>38.32%</td>	<td class='high'>59.83%</td>	<td class='high'>77.58%</td>	<td class='likely'>87.16%</td>	</tr>
+<tr><th class=opponent-row-header id='d-6'>6</th>	<td class='unlikely'>4.46%</td>	<td class='unlikely'>13.82%</td>	<td class='low'>27.97%</td>	<td class='even'>46.19%</td>	<td class='high'>65.15%</td>	<td class='high'>79.46%</td>	</tr>
 </table>
 </div></body></html>
