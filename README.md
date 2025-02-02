@@ -4,13 +4,15 @@ Calculate the odds of winning a battle in Andromeda's Edge.
 
 In Andromeda's Edge, combat is resolved by rolling dice. Each participant has between one and six dice, and also has a "targeting" value ranging from one to five. The player with the single highest die result is the winner; in the case of a tie, the tied dice are discarded, and the next-highest die is used to determine the result. If all of the dice come up exactly the same, then everyone loses.
 
-The table below shows the odds of the "attacker" in a combat winning, given different targeting and number of dice. Click on the desired targeting values and then find the cell matching the number of dice being rolled by the two players.
+The table below shows the odds of the "active" player in a combat winning, given different targeting and number of dice. Click on the desired targeting values and then find the cell matching the number of dice being rolled by the two players. These tables were designed to be printed onto reference cards, but the current implementation is an online interactive page, below:
 
 [TODO: Table here]
 
-The background color of the cell indicates the likelyhood of the attacker winning, in case you just want to "go by vibe".
+The background color of the cell indicates the likelyhood of the active player winning, in case you just want to "go by vibe".
 
-Note that in Andromeda's Edge, combats can involve more than two players.
+## Contributing
+
+Note that in Andromeda's Edge, combats can involve more than two players, and in 2-v-2 mode, there can be joint combats with up to twelve dice, with each ally having their own targeting value. This program does not yet account for these situations. Computationally, the odd for these variants are not difficult to calculate; however, the number of different combinations to consider goes up quickly, making it difficult to present tables in a form that could be printed. If this program were converted to Javascript, or perhaps embedded in a mobile app, then the parameters could be selected on a form, and the results could be calculated on the fly. This program is open source, and pull requests are welcome. Feel free to fork or adapt it to your own purposes.
 
 ## Why
 
