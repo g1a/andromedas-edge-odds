@@ -6,7 +6,9 @@ In Andromeda's Edge, combat is resolved by rolling dice. Each participant has be
 
 The table below shows the odds of the "active" player in a combat winning, given different targeting and number of dice. Click on the desired targeting values and then find the cell matching the number of dice being rolled by the two players. These tables were designed to be printed onto reference cards, but the current implementation is an online interactive page, below:
 
-[TODO: Table here]
+[![Combat Outcome Odds, 3 targeting vs 1 targeting](https://raw.githubusercontent.com/g1a/andromedas-edge-odds/refs/heads/main/img/combat-outcome-screenshot.png)](https://g1a.github.io/andromedas-edge-odds/two-combatants/3-targeting-v-1-targeting/)
+
+[Click for interactive probability table](https://g1a.github.io/andromedas-edge-odds/two-combatants/3-targeting-v-1-targeting/)
 
 The background color of the cell indicates the likelyhood of the active player winning, in case you just want to "go by vibe".
 
